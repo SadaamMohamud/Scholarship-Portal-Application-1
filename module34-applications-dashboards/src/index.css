@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-800 antialiased font-sans selection:bg-[#0052cc]/20 selection:text-[#0052cc];
+  }
+
+  /* Custom smooth scrolling and layout helper definitions */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom styles for Flowbite React alignment compatibility override properties if required */
+input[type="file"]::file-selector-button {
+  transition: background-color 0.15s ease-in-out;
+}
